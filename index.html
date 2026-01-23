@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Rishabh Gupta Portfolio</title>
-    <link rel="shortcut icon" href="../Portfolio-Website/images/SVG.png">
+    <link rel="shortcut icon" href="images/SVG.png">
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,96 +23,7 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-
-
-
-<style>
-
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
-</style>
+    <link rel="stylesheet" href="css/custom-enhancements.css">
 
 
   </head>
@@ -144,7 +55,7 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.jpeg);">
 	          	 <div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -154,39 +65,6 @@
 
 						<!-- Element to contain animated typing -->
 						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Engineer  ',
-						'MERN Stack Developer  ',
-						//'Teacher   ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
 
 						<br>
 						<br>
@@ -206,151 +84,160 @@
                                             <!--About section-->
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Rishabh Gupta</span></p>
-										<p><span class="title-s">Job Role: </span> <span>MERN Stack Developer</span></p>
-										<p><span class="title-s">Experience: </span> <span>Experienced</span></p>
-										<p><span class="title-s">Address: </span> <span>Ghaziabad, India</span></p>
-									  </div>
-									</div>
-								  </div>
+  <div class="container">
+    <div class="row">
+      <div class="row d-flex align-items-stretch">
+        <div class="col-md-6 col-lg-5 d-flex">
+          <div class="img-about img d-flex align-items-stretch">
+            <div class="overlay">
+              <div class="row">
+                <div class="col-sm-6 col-md-5">
+                  <div class="about-img">
+                    <img src="images/about-me.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+                  </div>
+                </div>
 
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>C</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Java</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>ExpressJs</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Nodejs</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Mongoose</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								<p>I graduated with a bachelor's degree in engineering from ABES Institute of Technology and have been working as a software developer. I am a MERN stack developer with hands-on experience developing production-ready web applications. I have successfully delivered multiple projects using MongoDB, Express.js, React.js, and Node.js, gaining valuable experience in full-stack development, database design, and API development.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>MERN Stack Developer</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>Skills:</span> <span>Frontend, Backend, Database, Git</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography.</span></li>
-									<li class="d-flex"><span>Soft Skills:</span> <span>Communication,Teamwork,Smart work</span></li>
-									
-								</ul>
-							</div>
-						</div>
+                <!-- Details next to profile image -->
+                <div class="col-sm-6 col-md-7">
+                  <div class="about-info">
+                    <p><span class="title-s">Name: </span> <span>Rishabh Gupta</span></p>
+                    <p><span class="title-s">Job Role: </span> <span>Python Backend Developer</span></p>
+                    <p><span class="title-s">Experience: </span> <span>2+ Years</span></p>
+                    <p><span class="title-s">Address: </span> <span>Ghaziabad, India</span></p>
+                  </div>
+                </div>
+              </div>
 
+              <div class="skill-mf">
+                <p class="title-s">Skills</p>
 
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="10">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/rishabh-gupta-560770213" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
+                <span>Python</span> <span class="pull-right">95%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
 
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-4">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2020-2024</span>
-    					<h2>Bachelor of Technology</h2>
-    					<span class="position">Abes Institute of Technology</span>
-    					<p class="mt-4">Percentage: 70%.</p>
-    				</div>
-    			</div>
+                <span>Django</span> <span class="pull-right">90%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
 
-    			<div class="col-md-4">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2019-2020</span>
-    					<h2>Intermediate </h2>
-    					<span class="position">Renaissance School</span>
-    					<p class="mt-4">Percentage: 75%.</p>
-    				</div>
-				</div>
-    		
+                <span>FastAPI</span> <span class="pull-right">85%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
 
-			<div class="col-md-4">
-				<div class="resume-wrap ftco-animate">
-					<span class="date">2017-2018</span>
-					<h2>High School </h2>
-					<span class="position">Renaissance School</span>
-					<p class="mt-4">Percentage: 86%.</p>
-				</div>
-			</div>
-		</div>
-	
-		                                         <!--Resume Section-->
-<section class="ftco-section ftco-no-pb" id="resume-section">
-    		<div class="row">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://drive.google.com/file/d/1Bb-vsdVDw6Ge3IWjBOIeIfkTPrViZpya/view?usp=drivesdk" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		
-    	        <div class="col-md-6 text-center ftco-animate">
-				    <p><a href="https://drive.google.com/drive/folders/17I6zUn-8QpXI2OxQ3AhKXj8yaVH7kHf3?usp=sharing" class="btn btn-primary py-4 px-5">Download Certificates</a></p>
-			    </div>
-		    </div>
-	
+                <span>REST APIs</span> <span class="pull-right">90%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <span>PostgreSQL / MySQL</span> <span class="pull-right">85%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+          <div class="row justify-content-start pb-3">
+            <div class="col-md-12 heading-section ftco-animate">
+              <h1 class="big">About</h1>
+              <h2 class="mb-4">About Me</h2>
+
+              <p>
+                Python Backend Developer with 2+ years of experience in designing and developing scalable,
+                secure, and high-performance backend systems. Specialized in Django and FastAPI for building
+                RESTful APIs, implementing authentication, managing databases, and integrating third-party
+                services. Hands-on experience with production-ready applications across healthcare,
+                enterprise, and management systems.
+              </p>
+
+              <ul class="about-info mt-4 px-md-0 px-2">
+                <li class="d-flex"><span>Profile:</span> <span>Python Backend Developer</span></li>
+                <li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
+                <li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+                <li class="d-flex"><span>Skills:</span> <span>Python, Django, FastAPI, REST APIs, Databases, Git</span></li>
+                <li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography</span></li>
+                <li class="d-flex"><span>Soft Skills:</span> <span>Communication, Teamwork, Problem Solving</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+            <div class="text">
+              <p class="mb-4">
+                <span class="number" data-number="10">0</span> <span>+</span>
+                <span>&nbsp; Projects Completed</span>
+              </p>
+              <p>
+                <a href="https://www.linkedin.com/in/rishabh-gupta-560770213"
+                  class="btn btn-primary py-3 px-3">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-4">Education</h1>
+            <h2 class="mb-4">Education</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-4">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2020-2024</span>
+              <h2>Bachelor of Technology</h2>
+              <span class="position">Abes Institute of Technology</span>
+              <p class="mt-4">Percentage: 70%</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2019-2020</span>
+              <h2>Intermediate</h2>
+              <span class="position">Renaissance School</span>
+              <p class="mt-4">Percentage: 75%</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2017-2018</span>
+              <h2>High School</h2>
+              <span class="position">Renaissance School</span>
+              <p class="mt-4">Percentage: 86%</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row mt-5">
+          <div class="col-md-6 text-center ftco-animate">
+            <p><a href="https://drive.google.com/file/d/1Bb-vsdVDw6Ge3IWjBOIeIfkTPrViZpya/view?usp=drivesdk" class="btn btn-primary py-4 px-5">Download CV</a></p>
+          </div>
+          
+          <div class="col-md-6 text-center ftco-animate">
+            <p><a href="https://drive.google.com/drive/folders/17I6zUn-8QpXI2OxQ3AhKXj8yaVH7kHf3?usp=sharing" class="btn btn-primary py-4 px-5">Download Certificates</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
                                                         <!--Projects Section-->
 
@@ -580,7 +467,7 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  
+  <script src="js/typing-animation.js"></script>
   <script src="js/main.js"></script>
     
   </body>
