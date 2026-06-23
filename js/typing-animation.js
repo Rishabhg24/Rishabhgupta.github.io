@@ -4,7 +4,7 @@ const typingAnimationElement = document.getElementById('typing-animation');
 // Create an array of typing text
 const typingTexts = [
     'Engineer  ',
-    'SAP Consultants',
+    'SAP Consultant',
     'Full Stack Developer '
 ];
 
